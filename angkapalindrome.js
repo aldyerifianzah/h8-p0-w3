@@ -1,19 +1,21 @@
-num++;
-var numStr = String(num);
-var reverseNum = '';
-for(var i = numStr.length-1; i >= 0; i--){
-    reverseNum += numStr[i];
-}
-
-if(reverseNum == num){
-    return num;
-}else{
-    return angkaPalindrome(num);
-}
-if(reverseNum == num){
-    return num;
-}else{
-    return angkaPalindrome(num);
+function angkaPalindrome(num) {
+    // you can only write your code here!
+    var balikAngka = String(num).split('').reverse('').join('');
+    if(num == balikAngka){
+        for(let i = num+1 ; i>=num; i++){
+            balikAngka = String(i).split('').reverse('').join('');
+            if(balikAngka == i){
+                return i;
+            }
+        }
+    }else{
+        for(let i = num+1 ; i>=num; i++){
+        balikAngka = String(i).split('').reverse('').join('');
+        if(balikAngka == i){
+            return i;
+            }
+        }
+    }
 }
 
 
