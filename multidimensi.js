@@ -9,7 +9,7 @@ function dataHandling(){
             console.log('Nomor ID: ' + input[i][0]);
             console.log('Nama Lengkap: ' + input[i][1]);
             console.log('TTL : ' + input[i][3]);
-            console.log('Hobi: ' + input[i][2]);
+            console.log('Hobi: ' + input[i][4]);
             console.log('                         ')
     }
     return hasil;
