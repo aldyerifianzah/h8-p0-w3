@@ -25,7 +25,7 @@ function angkaPalindrome(num) {
         return num+1;
     }else{
 
-        var hasil = num + 1;
+        var hasil = num ;
 
         while(hasil) {
             var hasilStr = String(hasil);
