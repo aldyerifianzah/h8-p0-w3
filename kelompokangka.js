@@ -5,16 +5,16 @@ function mengelompokkanAngka(arr) {
 
     for(var i=0; i< arr.length; i++){
 
-        if(arr[i] % 3 === 0){
+        if(arr[i] % 2 === 0 && arr[i] % 3 !== 0){
 
-            hasil[2].push(arr[i]); // ini untuk kelipatan tiga
+            hasil[0].push(arr[i]); //ini untuk genap
 
-        }else if(arr[i] % 2 === 0){
+        }else if(arr[i] % 2 === 1 &&  arr[i] % 3 !== 0){
 
-            hasil[1].push(arr[i]); // ini kelipatan dua
+            hasil[1].push(arr[i]); // ini untuk ganjil
 
-        }else{
-            hasil[0].push(arr[i]);
+        }else if(arr[i] % 3 === 0){
+            hasil[2].push(arr[i]);
         }
     }
 
