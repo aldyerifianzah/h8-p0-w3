@@ -1,31 +1,30 @@
 function groupAnimals(animals) {
     // you can only write your code here!
 
-    var a = animals.sort();
-    var kelompok = [];
+    var kamus = 'abcdefghijklmnopqrstuvwxyz'
 
-    for(var i = 0 ; i<= a.length-1 ; i++){
+    var tampung = []
 
-        var hurufAwal = a[i][0];
-
-        var urutan = [a[i]];
-
-        for( var j = a.length - 1; j>i; j--){
-
-            if(hurufAwal == a[j][0]){
-
-                urutan.push(a[j]);
-                a.splice(j,1);
+    for (let i = 0; i < kamus.length; i++) {
+        var tampung1 = []
+        for (let j = 0; j < animals.length; j++) {
+            if (kamus[i] == animals[j][0]) {
+                tampung1.push(animals[j])
+                // console.log(kamus[i], animals[j])
             }
-        } kelompok.push(urutan);
-    }return kelompok;
+        }
+        if (tampung1.length != 0) {
+            tampung.push(tampung1)
+        }
+
+    }
 
 
+    return tampung
+}
 
-  }
-  
-  // TEST CASES
-  console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
-  // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
-  console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
+// TEST CASES
+console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
+// [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
+console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak']));
   // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda', 'kancil'], ['unta'] ]

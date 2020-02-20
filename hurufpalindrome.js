@@ -3,6 +3,7 @@ function palindrome (kata){
 
     for(var i = kata.length-1; i >= 0; i--){
         balikKata += kata[i];
+        //balikKata = balikKata + kata[i]
     }
 
     if( kata === balikKata){

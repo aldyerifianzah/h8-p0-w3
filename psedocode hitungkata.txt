@@ -1,0 +1,18 @@
+1. buat variabel "kalimatArray" dengan nilai array kosong
+
+2.buat wadah dengan string kosong;
+
+3. buat looping yang dimana dari panjang kalimat dengan 
+	pertambahan I++
+
+	for(let i = 0; i<kalimat.length; i++)
+
+4. wadah menampung kalimat [i] // index
+
+5. apabila kalimat[i] adalah string kosong dan i adalah
+	jumlah banyak kalimat, maka kalimatArray dimasukan 
+	data dari wadah
+
+6.kosongkan wadah
+
+7. tampilkan hasil akhir dari kalimatArray.length

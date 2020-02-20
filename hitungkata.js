@@ -11,11 +11,11 @@ function hitungJumlahKata (kalimat){
   var wadah = '';
 
   for(let i = 0; i< kalimat.length; i++){
-    wadah += kalimat[i];
+    wadah += kalimat[i]; //wadah = wadah + kalimat[i]
 
-  if(kalimat[i] == ' ' || i == kalimat.length -1){
+  if(kalimat[i] == ' ' || i == kalimat.length-1 ){
     kalimatArray.push(wadah);
-    wadah = '';
+    // wadah = '';
     }
   }
   return kalimatArray.length;
